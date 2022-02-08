@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+      <ul>
+          <li class="brand"><img src="logo.png" alt="Spotify">Spotify</span></li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Sign Up</li>
+          <li>Login</li>
+      </ul>
+  </nav>
+
+  <div class="container">
+      <h1>Demo music</h1>
+      <div>
+         <div class="songItem">
+             <image src="cover1.jpg" alt="1">
+                 <span>Let me Love you</span>
+                 <span class="songlistplay"></span>05:34</image>span></span>
+         </div>
+      </div>
+      <div class="songlist">
+
+      </div>
+      <div class="songbanner"></div>
+  </div>
+
+  <div class="bottom">
+      <input type="range" name="range" id="Progressbar" min="0" max="100">
+      <div class="icons">
+          <!--fontawsome icons -->
+          <i class="=fas fa-3x fa-step-backward"></i>
+          <i class="=far fa-3x fa-play-circle"></i>
+          <i class="=fas fa-3x fa-step-forward"></i>
+      </div>
+
+  </div>
+  <script src="https://kit.fontawsome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+  <script> src= "script.js"></script>
+</body>
+</html>
+
+CSS
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+    background-color: aliceblue ;
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family:'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 63 px;
+    background-color:gray;
+}
+
+nav ul li{
+    padding: 0 13px ;
+}
+
+.brand img{
+   width: 45px; 
+   padding: 0 9px;
+}
+
+.brand{
+    display: flex ;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family:'Varela Round', sans-serif ;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    
+}
+
+.icons{
+    margin-top: 24px;
+}
+
+.icons{
+    cursor: pointer;
+}
+#Progressbar{
+    width: 80vw;
+
+}
